@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote  name="mark"
+        fetch="https://github.com/orgs/Aosp-Mrak"
+        revision="1.0" />
+
+</manifest>

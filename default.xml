@@ -2,8 +2,9 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://mirrors.bfsu.edu.cn/git/AOSP/"
            review="https://android-review.googlesource.com/" />
+
   <default revision="refs/tags/android-13.0.0_r81"
            remote="aosp"
            sync-j="4" />
@@ -1194,4 +1195,10 @@
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
   <!-- END open-source projects -->
+
+  <!-- BEGIN Aosp-Mark projects -->
+  <include name="snippets/remove.xml" />
+  <include name="snippets/mark.xml"/>
+  <!-- END Aosp-Mark projects -->
+
 </manifest>
