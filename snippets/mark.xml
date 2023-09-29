@@ -2,7 +2,14 @@
 <manifest>
 
     <remote  name="mark"
-        fetch="https://github.com/orgs/Aosp-Mrak"
-        revision="1.0" />
+        fetch="https://github.com/Aosp-Mrak"
+        revision="refs/heads/1.0" />
+
+    <remote  name="mark-ssh"
+        fetch="ssh://git@github.com/Aosp-Mrak"
+        revision="refs/heads/1.0" />
+
+    <!-- Aosp-Mark's Manifest -->
+    <project path="manifest" name="android_manifests" remote="mark" />
 
 </manifest>
